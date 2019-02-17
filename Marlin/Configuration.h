@@ -146,6 +146,9 @@
 
 // This defines the number of extruders
 // :[1, 2, 3, 4, 5]
+// TOMW: E0 has now been switched to E1 in pins_RAMPS.h as E0 has stopped working on the ramps board.
+// This means that two extruders WON'T WORK.
+// https://3dprinting.stackexchange.com/questions/5840/how-to-change-e0-to-e1-on-marlin-1-1
 #define EXTRUDERS 1
 
 // Generally expected filament diameter (1.75, 2.85, 3.0, ...). Used for Volumetric, Filament Width Sensor, etc.
@@ -1656,7 +1659,7 @@
 // RepRapDiscount FULL GRAPHIC Smart Controller
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
-//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
 
 //
 // ReprapWorld Graphical LCD
