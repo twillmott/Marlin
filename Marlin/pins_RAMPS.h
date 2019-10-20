@@ -109,21 +109,18 @@
   #define Z_CS_PIN         40
 #endif
 
-//https://3dprinting.stackexchange.com/questions/5840/how-to-change-e0-to-e1-on-marlin-1-1
-// Switching E0 to be E1 as E0 seems to be dead on the ramps board (I think).
-
-#define E0_STEP_PIN        36
-#define E0_DIR_PIN         34
-#define E0_ENABLE_PIN      30
+#define E0_STEP_PIN        26
+#define E0_DIR_PIN         28
+#define E0_ENABLE_PIN      24
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN        44
+  #define E0_CS_PIN        42
 #endif
 
-#define E1_STEP_PIN        26
-#define E1_DIR_PIN         28
-#define E1_ENABLE_PIN      24
+#define E1_STEP_PIN        36
+#define E1_DIR_PIN         34
+#define E1_ENABLE_PIN      30
 #ifndef E1_CS_PIN
-  #define E1_CS_PIN        42
+  #define E1_CS_PIN        44
 #endif
 
 /**
