@@ -611,7 +611,7 @@
 #define AXIS_STEPS_PER_UNIT_X 160.645
 #define AXIS_STEPS_PER_UNIT_Y 160.144
 #define AXIS_STEPS_PER_UNIT_Z 3192.308
-#define AXIS_STEPS_PER_UNIT_E 1440 
+#define AXIS_STEPS_PER_UNIT_E 192.1 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { AXIS_STEPS_PER_UNIT_X, AXIS_STEPS_PER_UNIT_Y, AXIS_STEPS_PER_UNIT_Z, AXIS_STEPS_PER_UNIT_E }
 
 /**
@@ -859,7 +859,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -883,8 +883,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 180
-#define Y_BED_SIZE 180
+#define X_BED_SIZE 200
+#define Y_BED_SIZE 200
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
@@ -892,7 +892,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 180
+#define Z_MAX_POS 200
 
 /**
  * Software Endstops
